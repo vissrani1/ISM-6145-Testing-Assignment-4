@@ -1,0 +1,950 @@
+{
+  "id": "fe8f338a-b74a-4571-ac9b-5a26956465ed",
+  "version": "2.0",
+  "name": "Assignment4",
+  "url": "https://demo.guru99.com/test/newtours/index.php",
+  "tests": [{
+    "id": "c4fa9089-c767-4e8b-a461-97aa2ce955b1",
+    "name": "104_InvalidLogin",
+    "commands": [{
+      "id": "18b011a5-57fb-4b3e-a1fd-88e4aab5d52a",
+      "comment": "",
+      "command": "//To test for invalid credentials",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68b463b0-fb25-4773-8cdf-a8b73d52c866",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f13b209-618c-4c78-bd32-1152c68c29ef",
+      "comment": "",
+      "command": "//Enter an Invalid Username and Password",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "777ae7b9-734a-4dd2-accf-9d8af3d15a09",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4bc16cb-ed6b-4858-a17d-b91a41f6af97",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "lol"
+    }, {
+      "id": "e7b414a4-ab07-43e9-b124-fe4ef641f4d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97353119-0505-4ce2-9599-8f03bc66f505",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "ki"
+    }, {
+      "id": "71d48ab9-8c88-4b89-810c-976a71189bf8",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80b9b032-fb37-46d2-be53-25ae206637c7",
+      "comment": "",
+      "command": "//Confirming that login information that was inputted was invalid and did not login",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cf1f1aa-d6e5-4461-ba20-078d5de7b58c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span:nth-child(3)",
+      "targets": [
+        ["css=span:nth-child(3)", "css:finder"],
+        ["xpath=//td[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter your userName and password correct')]", "xpath:innerText"]
+      ],
+      "value": "Enter your userName and password correct"
+    }, {
+      "id": "886898d4-1d16-459d-b537-4d9e9afb87bf",
+      "comment": "",
+      "command": "//Test Case passed",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "480cab90-60a5-49c9-9eb6-07ab0ded1611",
+    "name": "105_ValidLogin",
+    "commands": [{
+      "id": "a27d2805-ab23-4a45-bd8d-a5907d236ffd",
+      "comment": "",
+      "command": "//To Test A Valid Login",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9ee4fc7-6c1e-467d-aff6-466cc639db14",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "034848d2-3024-44b5-8db4-798dfedb050a",
+      "comment": "Enter a Valid Username and Password that was previously created",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6538eb2-5980-4430-a659-be34839d5b46",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ae6a5b3-b160-4a6f-b6b5-31b48bbbf0ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "jane2"
+    }, {
+      "id": "23e4991a-8e25-4779-985d-75bc131e4bd4",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3dd6ed-552c-4b29-a629-fb6a3001ad26",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "9b2912f0-ac02-4790-9c89-7c48732d2209",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffdb93cd-7db1-4608-b46e-635869aeb506",
+      "comment": "",
+      "command": "//Confirmation that the username and password that was entered was valid and logged the user successfully",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7ef2aef-b452-44ed-98f8-1c09cb36efdc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Successfully')]", "xpath:innerText"]
+      ],
+      "value": "Login Successfully"
+    }, {
+      "id": "ce6da588-66db-4433-9de2-e64a729fb16a",
+      "comment": "",
+      "command": "//Test Case Passed",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f42b8218-7f75-49ee-9ade-d7ff87998b9b",
+    "name": "100_NewRegistrationTemplate",
+    "commands": [{
+      "id": "b74a555c-a95b-44b0-89c4-fd90e6cdcdb5",
+      "comment": "",
+      "command": "//Register a New User",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "176ce2db-5ac6-41f7-8ed2-6c0f798c7109",
+      "comment": "",
+      "command": "//This test case will be used as a template to test for new registration, duplicate registration and nulls",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e9b3c54-8047-41ce-bd7c-ffa65af7f616",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ced3a70f-1f4d-44f9-8528-64dbaab20ac9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=REGISTER",
+      "targets": [
+        ["linkText=REGISTER", "linkText"],
+        ["css=.mouseOver > a", "css:finder"],
+        ["xpath=//a[contains(text(),'REGISTER')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'register.php')]", "xpath:href"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REGISTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "055a7b0b-d416-4aca-b4b2-1df4ce53d146",
+      "comment": "",
+      "command": "//Input firstname, lastname, email, password and confirm password",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6453da7-89d3-40cc-858b-2b6902dc1f53",
+      "comment": "",
+      "command": "click",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4213c1f-5f4f-48c5-8b6e-da060daa400b",
+      "comment": "",
+      "command": "//Declaring variables to use in other test cases",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a685c9f-94a7-4f4f-a11a-bac98d43e546",
+      "comment": "",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "${firstName}"
+    }, {
+      "id": "aeefd930-404b-4ac1-bb23-72204f5aab7d",
+      "comment": "",
+      "command": "click",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aab18d2-6ef2-47a0-a11d-aa77426e41b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${lastName}"
+    }, {
+      "id": "2f7868dc-efe3-4578-ab0c-ba6a63aeaf05",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "864e858d-f135-47f1-9f9d-2c64afae2ad1",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "fe27596a-a3d9-4e70-9c59-a8341469f667",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "479aab46-18e6-439d-b60e-9cf70d95ad1d",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "9434b411-e7b6-4cc0-91af-86cce5278525",
+      "comment": "",
+      "command": "click",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8fc7c69-9004-49d0-957e-45425e4e02e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${confirmPassword}"
+    }, {
+      "id": "dfdb0c00-dfd4-4ccf-bfbc-98f85805d6fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[17]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "496cde02-b5e3-40df-90e0-5fa54c4024ed",
+      "comment": "",
+      "command": "//Confirming whether a new user was created successfully",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b92b498-8223-4d94-b231-6a4ae3844ee2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2) > font",
+      "targets": [
+        ["css=p:nth-child(2) > font", "css:finder"],
+        ["xpath=//tr[3]/td/p[2]/font", "xpath:position"]
+      ],
+      "value": "Thank you for registering. You may now sign-in using the user name and password you've just entered."
+    }]
+  }, {
+    "id": "02339d95-3e24-4f93-bfdb-5cbbae29d9e4",
+    "name": "101_NewRegistration",
+    "commands": [{
+      "id": "30db61ef-1f8b-4d02-a7ba-96f1db64a501",
+      "comment": "",
+      "command": "//Register a New User by using the store command (using Test Case #100NewRegistrationTemplate)",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cf11a6a-6914-4966-8d36-5581156af854",
+      "comment": "",
+      "command": "//Assigning values to variables",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a597cbe3-1e1a-4e58-ab12-cafa098f8ac3",
+      "comment": "",
+      "command": "store",
+      "target": "Jane",
+      "targets": [],
+      "value": "firstName"
+    }, {
+      "id": "8bd23338-af40-4e77-a2e7-d2101f82380c",
+      "comment": "",
+      "command": "store",
+      "target": "Doe",
+      "targets": [],
+      "value": "lastName"
+    }, {
+      "id": "ec3e6819-49b7-4eac-81dd-a5c52f48ab72",
+      "comment": "",
+      "command": "store",
+      "target": "jane2",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "478e784c-2abb-4171-b8d4-3deff3c3a8f6",
+      "comment": "",
+      "command": "store",
+      "target": "123456",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "5fc3a427-f5c2-4c09-a4c7-790cd1dc0ba2",
+      "comment": "",
+      "command": "store",
+      "target": "123456",
+      "targets": [],
+      "value": "confirmPassword"
+    }, {
+      "id": "b54dde6b-71aa-4691-b411-efe0c265ae07",
+      "comment": "",
+      "command": "//Running 100_NewRegistration Test Case",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88bdaf80-209d-4264-8fba-a285f08d0168",
+      "comment": "",
+      "command": "run",
+      "target": "100_NewRegistrationTemplate",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "55b74c23-e9bc-4098-a307-152b21593784",
+    "name": "102_DuplicateRegistration",
+    "commands": [{
+      "id": "d0d9eb5c-ff2f-41c8-8626-a9755fd9c54e",
+      "comment": "",
+      "command": "//To test whether the system accepts duplicate information for registration fields: username and password",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3fdc5f2-177e-4fd2-9998-a181d479ff4c",
+      "comment": "",
+      "command": "//using Test Case #100_NewRegistrationTemplate",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fa3e218-16c0-43c9-b6d7-63b892a488b9",
+      "comment": "",
+      "command": "store",
+      "target": "Jane",
+      "targets": [],
+      "value": "firstName"
+    }, {
+      "id": "fe0c62a5-e0cd-4f7d-8e7b-b64da53c8979",
+      "comment": "",
+      "command": "store",
+      "target": "Doe",
+      "targets": [],
+      "value": "lastName"
+    }, {
+      "id": "83f34ad3-332a-4170-b398-06c3af663dc7",
+      "comment": "",
+      "command": "store",
+      "target": "jane2",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "0f908b84-769e-4df6-8567-99c3dd6f13f7",
+      "comment": "",
+      "command": "store",
+      "target": "123456",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "80342c5c-8dec-423f-b72e-e7b304c0bddc",
+      "comment": "",
+      "command": "store",
+      "target": "123456",
+      "targets": [],
+      "value": "confirmPassword"
+    }, {
+      "id": "d39c3f11-2a1f-4dc1-9474-4e9a3b02815b",
+      "comment": "",
+      "command": "//Running 100_NewRegistration Test Case",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a637420a-7bc2-4b1e-b827-19f18e8ab941",
+      "comment": "",
+      "command": "run",
+      "target": "100_NewRegistrationTemplate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "450a0056-1bef-4811-975d-f3895f000a7c",
+      "comment": "",
+      "command": "//Confirmation that that username was not created using duplicate values",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "246d64ba-4d11-49f2-b9c1-ecfa7247375c",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=p:nth-child(3) b",
+      "targets": [
+        ["css=p:nth-child(3) b", "css:finder"],
+        ["xpath=//p[3]/font/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Note: Your user name is jane2.')]", "xpath:innerText"]
+      ],
+      "value": "Note: Your user name is jane2."
+    }, {
+      "id": "7afc2127-9512-4a5e-8210-83d657abc592",
+      "comment": "",
+      "command": "//This test case failed since the text was found.",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "82f7a429-bffd-4b16-9673-0922ab28ba5a",
+    "name": "103_Nulls",
+    "commands": [{
+      "id": "a43034d4-44c7-4ad8-b060-c6a2059bb0bb",
+      "comment": "",
+      "command": "//To Test Whether System will accept an empty/null value for Password",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b536dd95-4109-48d6-938e-091cef7bb261",
+      "comment": "",
+      "command": "//Assigning values to variables",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e44c7d21-2a93-4682-aadd-4d1a06dfb221",
+      "comment": "",
+      "command": "store",
+      "target": "Varsha",
+      "targets": [],
+      "value": "firstName"
+    }, {
+      "id": "34f9a2a0-f72d-41de-b23f-c6339d9377fe",
+      "comment": "",
+      "command": "store",
+      "target": "Issrani",
+      "targets": [],
+      "value": "lastName"
+    }, {
+      "id": "3703f84c-428b-40e1-b722-310297fb8ca4",
+      "comment": "",
+      "command": "store",
+      "target": "vissrani",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "389ed56c-03cd-47eb-ba44-8e80a1abb13a",
+      "comment": "",
+      "command": "//Password and confirm password are going to be empty/null",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1746bd29-6722-4de4-9c8c-0884bbddd1c8",
+      "comment": "",
+      "command": "store",
+      "target": "",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "7e953ff8-71ad-4485-8757-6eb5a4827c9e",
+      "comment": "",
+      "command": "store",
+      "target": "",
+      "targets": [],
+      "value": "confirmPassword"
+    }, {
+      "id": "d1c76ca8-20c0-4f95-9cbf-b053a94dcc10",
+      "comment": "",
+      "command": "//Running 100_NewRegistration Test Case",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52e46a37-1fe3-447c-9f95-e73078c5aad2",
+      "comment": "",
+      "command": "run",
+      "target": "100_NewRegistrationTemplate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e1283c3-86af-4140-8bad-b62b1dcfe1dc",
+      "comment": "",
+      "command": "//Using Assert Not to see whether the Username was created without the password",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2640903a-f839-4bc7-a078-d8292743cfd4",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=p:nth-child(3) b",
+      "targets": [],
+      "value": "Note: Your user name is vissrani."
+    }, {
+      "id": "d8710f82-7daf-469d-8099-6fc4b182d2ad",
+      "comment": "",
+      "command": "//Test Case Failed- System accepted a null value for password and created the username",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "883ecf5d-0369-458b-9933-3a195131e52e",
+    "name": "106_RoundtripFlightFinder",
+    "commands": [{
+      "id": "2e680936-a7fb-405d-832f-9aeaaf3b7bab",
+      "comment": "",
+      "command": "//To Test If Flight Finder- Round Trip feature displays a result after user enters details",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2cda86b-4ad8-46bd-badf-2d3412152a1d",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de7838bb-0e0c-4ff6-843c-f3a51eeca565",
+      "comment": "",
+      "command": "//Click on Flight",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d3d58e5-b339-4d5d-9d8f-371c150dc18f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Flights",
+      "targets": [
+        ["linkText=Flights", "linkText"],
+        ["css=.mouseOver a", "css:finder"],
+        ["xpath=//a[contains(text(),'Flights')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'reservation.php')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Flights')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b82586e-a410-46a4-94ac-944e81d527b4",
+      "comment": "",
+      "command": "click",
+      "target": "name=passCount",
+      "targets": [
+        ["name=passCount", "name"],
+        ["css=b > select", "css:finder"],
+        ["xpath=//select[@name='passCount']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d128c502-b3b1-41ac-ac1d-8d2dae6f7483",
+      "comment": "",
+      "command": "select",
+      "target": "name=passCount",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "f62b22fd-5f51-4ddf-a134-7d0d804d342f",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromPort",
+      "targets": [
+        ["name=fromPort", "name"],
+        ["css=tr:nth-child(4) > td > select", "css:finder"],
+        ["xpath=//select[@name='fromPort']", "xpath:attributes"],
+        ["xpath=//td[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Acapulco\nFrankfurt\nLondon\nNew York\nParis\nPortland\nSan Francisco\nSeattle\nSydney\nZurich')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "134d888b-9d9f-4b5d-a8bb-639b01d87aae",
+      "comment": "",
+      "command": "select",
+      "target": "name=fromPort",
+      "targets": [],
+      "value": "label=London"
+    }, {
+      "id": "724461fd-ef9d-4567-89a2-3c194eb0fec2",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromMonth",
+      "targets": [
+        ["name=fromMonth", "name"],
+        ["css=tr:nth-child(5) > td > select:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='fromMonth']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d6c963d-f1da-4cfc-bf78-f6e520e1bcbe",
+      "comment": "",
+      "command": "select",
+      "target": "name=fromMonth",
+      "targets": [],
+      "value": "label=August"
+    }, {
+      "id": "0cab4f1e-13d4-4633-b321-edaa9f98c119",
+      "comment": "",
+      "command": "click",
+      "target": "name=fromDay",
+      "targets": [
+        ["name=fromDay", "name"],
+        ["css=tr:nth-child(5) > td > select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='fromDay']", "xpath:attributes"],
+        ["xpath=//select[2]", "xpath:position"],
+        ["xpath=//select[contains(.,'1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d47fb56-25c5-4814-bb90-c27cd384ff7b",
+      "comment": "",
+      "command": "select",
+      "target": "name=fromDay",
+      "targets": [],
+      "value": "label=13"
+    }, {
+      "id": "1926422c-5dc2-487a-8f67-863511c6699a",
+      "comment": "",
+      "command": "click",
+      "target": "name=toPort",
+      "targets": [
+        ["name=toPort", "name"],
+        ["css=tr:nth-child(6) select", "css:finder"],
+        ["xpath=//select[@name='toPort']", "xpath:attributes"],
+        ["xpath=//tr[6]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59960637-e861-4d22-a414-2b090df02fc9",
+      "comment": "",
+      "command": "select",
+      "target": "name=toPort",
+      "targets": [],
+      "value": "label=New York"
+    }, {
+      "id": "3badc068-3ff1-4dd0-b25f-524749aea4d1",
+      "comment": "",
+      "command": "click",
+      "target": "name=toMonth",
+      "targets": [
+        ["name=toMonth", "name"],
+        ["css=tr:nth-child(7) select:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='toMonth']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "954186bc-55cb-45af-bd79-01e923504e08",
+      "comment": "",
+      "command": "select",
+      "target": "name=toMonth",
+      "targets": [],
+      "value": "label=September"
+    }, {
+      "id": "5690422c-6577-487c-a15e-2affde82b8cb",
+      "comment": "",
+      "command": "click",
+      "target": "name=toDay",
+      "targets": [
+        ["name=toDay", "name"],
+        ["css=tr:nth-child(7) select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='toDay']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eba76505-872b-4db6-a7cd-92ca15f91242",
+      "comment": "",
+      "command": "select",
+      "target": "name=toDay",
+      "targets": [],
+      "value": "label=13"
+    }, {
+      "id": "29d40a3a-7f78-4d22-8c58-4e616c9ca707",
+      "comment": "",
+      "command": "click",
+      "target": "css=font:nth-child(2) > input:nth-child(2)",
+      "targets": [
+        ["css=font:nth-child(2) > input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='servClass'])[2]", "xpath:attributes"],
+        ["xpath=//font/font/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44d2be04-42ac-4a2c-9893-7ca89f0b8ce7",
+      "comment": "",
+      "command": "click",
+      "target": "name=airline",
+      "targets": [
+        ["name=airline", "name"],
+        ["css=tr:nth-child(10) select", "css:finder"],
+        ["xpath=//select[@name='airline']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "693ecac3-8595-4692-885b-f75e3a30f0c2",
+      "comment": "",
+      "command": "select",
+      "target": "name=airline",
+      "targets": [],
+      "value": "label=Pangea Airlines"
+    }, {
+      "id": "e8b8e31f-4648-41fe-af4c-710c16e68dbe",
+      "comment": "",
+      "command": "//Click on Flights Link on Home Page",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e5746df-bb14-4c53-bff7-c75c273110c5",
+      "comment": "",
+      "command": "click",
+      "target": "name=findFlights",
+      "targets": [
+        ["name=findFlights", "name"],
+        ["css=td > input", "css:finder"],
+        ["xpath=//input[@name='findFlights']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c9a21ee-6007-4784-8e05-74644bc25574",
+      "comment": "",
+      "command": "//Confirmation that a result displayed after submitting the information",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ea8c202-b6dc-4817-8547-751e039d3f34",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=font:nth-child(1) > b > font:nth-child(1)",
+      "targets": [
+        ["css=font:nth-child(1) > b > font:nth-child(1)", "css:finder"],
+        ["xpath=//b/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce6fce53-92c8-4d6f-9735-fc69b6165d63",
+      "comment": "",
+      "command": "//Test Case Passed",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "595f6616-cc62-402f-aef5-c49b7b35d5a2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "8f4b5d53-f6e0-4b5c-ae34-40ff5b7a9645",
+    "name": "Testing Assignment 4- VIssrani ISM 6145",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f42b8218-7f75-49ee-9ade-d7ff87998b9b", "02339d95-3e24-4f93-bfdb-5cbbae29d9e4", "55b74c23-e9bc-4098-a307-152b21593784", "82f7a429-bffd-4b16-9673-0922ab28ba5a", "c4fa9089-c767-4e8b-a461-97aa2ce955b1", "480cab90-60a5-49c9-9eb6-07ab0ded1611", "883ecf5d-0369-458b-9933-3a195131e52e"]
+  }],
+  "urls": ["https://demo.guru99.com/test/newtours/index.php"],
+  "plugins": []
+}
